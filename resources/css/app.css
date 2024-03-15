@@ -1,0 +1,62 @@
+/* @tailwind base; */
+@tailwind components;
+@tailwind utilities;
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none !important;
+  margin: 0 !important;
+}
+input[type="number"] {
+  -moz-appearance: textfield !important;
+}
+.Notivue__Parents {
+  z-index: 9999 !important;
+}
+.v-btn {
+  border-radius: 10px !important;
+}
+.v-table {
+  border-radius: 10px !important;
+}
+.v-table header.v-toolbar {
+  border-radius: 10px !important;
+}
+.v-table__wrapper table tbody tr.v-data-table__tr:nth-of-type(even) {
+  background-color: rgba(236, 237, 237);
+}
+.v-table__wrapper table tbody tr.v-data-table__tr:nth-of-type(odd) {
+  background-color: rgb(255, 255, 255);
+}
+.v-table .v-table__wrapper > table > tbody > tr:not(:last-child) > td,
+.v-table .v-table__wrapper > table > tbody > tr:not(:last-child) > th {
+  border-bottom: thin solid rgba(var(--v-border-color), 0.1) !important;
+}
+.v-table--density-default > .v-table__wrapper > table > tbody > tr > td,
+.v-table--density-default > .v-table__wrapper > table > thead > tr > td,
+.v-table--density-default > .v-table__wrapper > table > tfoot > tr > td {
+  height: calc(var(--v-table-row-height, 68px) + 0px) !important;
+}
+.v-table__wrapper table tbody tr.v-data-table__tr td {
+  background: transparent !important;
+}
+/* .active-route {border-radius: 0 15px 15px 0;margin-right: 20px;} */
+.active-route {
+  border-radius: 0 15px 15px 0;
+  background: rgba(255, 136, 17, 0.3); /* The last value is the alpha channel for opacity */
+  border: solid 1px rgba(255, 136, 17, 1);
+}
+
+.v-icon {
+  opacity: 1 !important;
+}
+.v-navigation-drawer__content {
+  padding: 10px 0;
+}
+/* .v-navigation-drawer--left {
+  margin-top: 0;
+  border-right: 0;
+} */
+
+.v-btn__content {
+  white-space: normal !important;
+}
